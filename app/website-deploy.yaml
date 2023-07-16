@@ -15,7 +15,7 @@ spec:
         app: argocdrocks
     spec:
       containers:
-      - name: argocdrocks-nginy
+      - name: argocdrocks-nginx
         image: nginx:alpine
         ports:
         - containerPort: 80
