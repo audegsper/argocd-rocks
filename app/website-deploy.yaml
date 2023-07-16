@@ -14,6 +14,10 @@ spec:
       labels:
         app: argocdrocks
     spec:
+      volumes:
+      - name: website-cm-volume 
+        configMap:
+          name: website-cm
       containers:
       - name: argocdrocks-nginy
         image: nginx:alpine
@@ -21,8 +25,4 @@ spec:
         - containerPort: 80
         volumeMounts:
         - name: website-cm-volume
-          mountPath: /usr/share/nginx/index.html
-      volumes:
-      - name: website-cm-volume 
-        configMap:
-          name: website-cm
+          mountPath: /usr/share/nginx/index
