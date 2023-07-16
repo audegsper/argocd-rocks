@@ -15,10 +15,10 @@ spec:
         app: argocdrocks
     spec:
       containers:
-      - name: argocdrocks-nginx
+      - name: argocdrocks-nginy
         image: nginx:alpine
         ports:
-        - containerPort: 80
+        - containerPort: 81
         volumeMounts:
         - name: website-cm-volume
           mountPath: /usr/share/nginx/html
