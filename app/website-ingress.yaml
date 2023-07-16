@@ -17,5 +17,5 @@ spec:
           service:
             name: website-service
             port:
-              number: 81
+              number: 80
 
