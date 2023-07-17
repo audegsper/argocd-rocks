@@ -8,6 +8,8 @@ metadata:
     ingress.kubernetes.io/ssl-redirect: "false"
     traefik.ingress.kubernetes.io/rewrite-target: /
 spec:
+  entrypoint:
+  - web
   rules:
   - http:
       paths:
