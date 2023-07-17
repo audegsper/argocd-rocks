@@ -20,7 +20,7 @@ spec:
           name: website-cm
       containers:
       - name: argocdrocks-nginy
-        image: nginx:stable
+        image: nginx:latest
         ports:
         - containerPort: 80
         volumeMounts:
